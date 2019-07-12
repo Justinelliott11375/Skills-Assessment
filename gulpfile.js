@@ -9,7 +9,7 @@ var babel = require('gulp-babel');
 var rename = require('gulp-rename');
 
 // default when you run gulp
-gulp.task('default', ['styles', 'scripts', 'lint'], function() {
+gulp.task('default', ['styles', 'scripts', 'lint'], function () {
   console.log('What? SUPPORT is evolving!');
   gulp.watch('sass/**/*.sass', ['styles']);
   gulp.watch('js/**/*.js', ['scripts', 'lint']);
@@ -22,7 +22,7 @@ gulp.task('default', ['styles', 'scripts', 'lint'], function() {
 });
 
 // sass task
-gulp.task('styles', function() {
+gulp.task('styles', function () {
   gulp.src('sass/**/main.sass')
     // compress & minify
     .pipe(sass({
@@ -42,7 +42,7 @@ gulp.task('styles', function() {
 });
 
 // scripts task including es6 syntax
-gulp.task('scripts', function() {
+gulp.task('scripts', function () {
   gulp.src('js/**/*.js')
     .pipe(babel({
       presets: ['env']
@@ -56,7 +56,7 @@ gulp.task('scripts', function() {
 });
 
 // lint task to check syntax
-gulp.task('lint', function() {
+gulp.task('lint', function () {
   return gulp.src(['js/**/*.js'])
     .pipe(eslint())
     .pipe(eslint.format())

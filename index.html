@@ -1,26 +1,132 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
 
     <!-- styles -->
     <!-- Google Fonts Link Here -->
-    <link rel="stylesheet" href="./minified/styles.min.css">
-
+    <link rel="stylesheet" href="./minified/styles.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- scripts -->
     <script type="text/javascript" src="./minified/scripts.min.js"></script>
     <title></title>
   </head>
+
   <body class="jlb-assessment-page">
-
+    <header id="header">
+      <div class="header-text">
+        <h1>LOREM IPSUM</h1>
+        <h2>DOLOR SIT AMET ARAN</h2>
+        <h6>
+          Pri ei sumo falli, homero euismod reformidans sed cu, stet ornatus eos
+          at. Cu sed nulla praesent, nihil voluptaria liberavisse ut usu, mei
+          iusto noster ut.
+        </h6>
+      </div>
+      <script></script>
+    </header>
     <main class="body-container">
-      <section class="wrapper">
-        <h1 id="welcome">You've got this!</h1>
-        <p>( i believe in you )</p>
-      </section>
+      <div class="collage-container">
+        <div id="collage-left-half">
+          <img
+            data-aos="fade-up-right"
+            class="collage-item"
+            src="assets/COLLAGE_IMAGE_1.jpg"
+            alt="Collage Image 1"
+          />
+          <div id="collage-bottom-left">
+            <img
+              data-aos="fade-up-right"
+              class="collage-item"
+              src="assets/COLLAGE_IMAGE_5.jpg"
+              alt="Collage Image 5"
+            />
+            <img
+              data-aos="fade-up-right"
+              class="collage-item"
+              src="assets/COLLAGE_IMAGE_4.jpg"
+              alt="Collage Image 4"
+            />
+          </div>
+        </div>
+        <div id="collage-right-half">
+          <video
+            class="collage-item"
+            id="video-embed"
+            data-aos="fade-up"
+            width="720"
+            height="400"
+            controls
+          >
+            src="https://www.youtube.com/watch?v=yAoLSRbwxL8" Your browser does
+            not support the video tag.
+          </video>
 
+          <img
+            data-aos="fade-up-right"
+            class="collage-item"
+            src="assets/COLLAGE_IMAGE_2.jpg"
+            alt="Collage Image 2"
+          />
+          <img
+            data-aos="fade-up-right"
+            class="collage-item"
+            src="assets/COLLAGE_IMAGE_3.jpg"
+            alt="Collage Image 3"
+          />
+        </div>
+      </div>
+
+      <div class="right-container">
+        <div id="right-container-text" data-aos="fade-up-left">
+          <div class="right-container-title">
+            <h4>WELCOME TO YOUR</h4>
+            <h3>SKILLS ASSESSMENT.</h3>
+          </div>
+          <div class="right-container-body">
+            <p class="right-container-paragraph-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              velit felis, viverra eu nunc sed, imperdiet venenatis diam. Donec
+              consectetur commodo est, suscipit elementum lectus tincidunt ut.
+              In non luctus elit. Suspendisse suscipit venenatis magna, eget
+              convallis tristique. Nam a pretium nibh. Integer tincidunt mauris
+              sed lorem malesuada, nec rhoncus nisi tempor. Proin.
+            </p>
+            <p class="right-container-paragraph-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              velit felis, viverra eu nunc sed, imperdiet venenatis diam. Donec
+              consectetur commodo est, suscipit elementum lectus tincidunt ut.
+              In non luctus elit. Suspendisse suscipit venenatis magna, eget
+              convallis tristique. Nam a pretium nibh. Integer tincidunt mauris
+              sed lorem malesuada, nec rhoncus nisi tempor. Proin.
+            </p>
+            <p
+              class="right-container-paragraph-text"
+              id="right-container-paragraph-last-paragraph"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              velit felis, viverra eu nunc sed, imperdiet venenatis diam. Donec
+              consectetur commodo est, suscipit elementum lectus tincidunt ut.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script type="text/javascript">
+      var heroImages = [
+        "/assets/HERO_1.jpg",
+        "/assets/HERO_2.jpg",
+        "/assets/HERO_3.jpg"
+      ];
 
+      var randomImage = Math.floor(Math.random() * heroImages.length);
+      document.getElementById("header").style.backgroundImage =
+        "url(" + heroImages[randomImage] + ")";
+    </script>
   </body>
 </html>

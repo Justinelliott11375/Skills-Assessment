@@ -1,10 +1,102 @@
 @import 'variables'
 
+*
+	font-family: 'Montserrat', sans-serif
+	margin: 0
 
-// Delete Me and Good Luck!
-body
-	height: 100vh
-	display: flex 
-	align-items: center 
-	justify-content: center 
+
+main
+	background-color: $white
+
+header
 	text-align: center
+	background-repeat: no-repeat;
+	border-bottom: 7vh solid $red
+	margin-bottom: .5rem
+	height: 95vh
+	display: flex
+	align-items: center
+	justify-content: center
+
+	.header-text
+		width: 45vw
+		
+	h1
+		color: $red
+		font-size: 110px
+		font-weight: 900
+		height: 95px
+	h2
+		color: $white
+		font-weight: 900
+		font-size: 65px
+		height: 90px
+	h6
+		color: $white
+		font-weight: 500
+		font-size: 18px
+
+.collage-container
+	float: left
+	width: 50%
+	display: grid
+	grid-gap: .5em 
+
+	#collage-left-half
+		display: grid
+		grid-gap: .5em
+
+	#collage-right-half
+		position: absolute
+		margin-top: -240px
+		margin-left: 571px
+		padding-left: .5em
+		display: grid
+		grid-gap: .5em
+
+		#video-embed
+			box-shadow: 0px 0px 25px
+
+	#collage-bottom-left
+		width: 571px
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-gap: .5 em
+
+.right-container
+	background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url("../assets/SPLASH WATERMARK.png")
+	background-position: bottom right
+	background-repeat: no-repeat
+	width: 47%
+	height: 716px
+	float: right
+	display: flex
+	align-items: center
+
+	#right-container-text
+		
+		.right-container-title
+
+			padding-bottom: 15px
+			border-bottom: 4px solid $black
+			margin-bottom: 10px
+			
+			h4
+				color: $black
+				font-weight: 900
+				font-size: 27px
+				height: 18px
+			h3
+				color: $red
+				font-weight: 900
+				font-size: 44px
+
+		.right-container-body
+
+			.right-container-paragraph-text
+				font-size: 10px
+				padding: 10px 210px 0 0
+			#right-container-paragraph-last-paragraph
+				color: $red
+				font-weight: bold
+
